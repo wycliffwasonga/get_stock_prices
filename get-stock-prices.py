@@ -17,7 +17,7 @@ def tidy_response(csvstring):
     for row in reader:
         price = {
             "date": datetime.strptime(row[0], "%Y-%m-%d").strftime('%d/%m/%Y'),
-            "close": row[3]
+            "close": row[4]
             }
         prices.append(price)
     
